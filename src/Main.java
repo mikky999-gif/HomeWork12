@@ -33,7 +33,8 @@ String small = "abcd";
 System.out.println(small.toUpperCase());
 Результат в консоли: ABCD. Подробнее о работе метода toUpperCase() читайте в шпаргалке.*/
         System.out.println("Task 2");
-        System.out.println(fullName.toUpperCase());
+        String tabName = fullName.toUpperCase();
+        System.out.println(tabName);
         /*Задача 3
 Система, в которой мы работаем, не принимает символ «ё». Напишите программу, которая заменяет символ «ё» на символ «е».
 В качестве исходных данных используйте строку fullName и данные в ней — «Иванов Семён Семёнович».
