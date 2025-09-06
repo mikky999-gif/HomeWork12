@@ -4,12 +4,42 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        /*Задача 1
+Представьте, что вы работаете в небольшой компании. Данные сотрудников хранятся в неструктурированном формате.
+Бухгалтерия попросила написать программу, в которой можно работать с Ф. И. О. сотрудников.
+Напишите четыре строки:
+С именем firstName — для хранения имени.
+С именем middleName — для хранения отчества.
+С именем lastName — для хранения фамилии.
+С именем fullName — для хранения Ф. И. О. сотрудника в формате «Фамилия Имя Отчество».
+Выведите в консоль фразу: «Ф. И. О. сотрудника — …».
+В качестве данных для задачи используйте Ivanov Ivan Ivanovich.*/
+        System.out.println("Task 1");
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + " " + firstName + " " + middleName;
+        System.out.println(fullName);
+        /*Задача 2
+Для ежемесячного отчета и ведения документации бухгалтерии нужны Ф. И. О. сотрудников,
+полностью написанные заглавными буквами (верхним регистром). Напишите программу, которая изменит написание Ф. И. О. сотрудника
+с Ivanov Ivan Ivanovich на полностью заглавные буквы. В качестве строки с исходными данными используйте строку fullName.
+Результат программы выведите в консоль в формате: «Данные Ф. И. О. сотрудника для заполнения отчета — …».
+Подсказка
+Для решения задачи используйте метод toUpperCase(). Этот метод преобразует все знаки в строке в верхний регистр.
+Пример работы метода:
+String small = "abcd";
+System.out.println(small.toUpperCase());
+Результат в консоли: ABCD. Подробнее о работе метода toUpperCase() читайте в шпаргалке.*/
+        System.out.println("Task 2");
+        System.out.println(fullName.toUpperCase());
+        /*Задача 3
+Система, в которой мы работаем, не принимает символ «ё». Напишите программу, которая заменяет символ «ё» на символ «е».
+В качестве исходных данных используйте строку fullName и данные в ней — «Иванов Семён Семёнович».
+Выведите результат программы в консоль в формате: «Данные Ф. И. О. сотрудника — ...».*/
+        System.out.println("Task 3");
+        String newFullName = "Иванов Семён Семёнович";
+        String fullNameCorrect = newFullName.replace('ё', 'е');
+        System.out.println(fullNameCorrect);
     }
 }
