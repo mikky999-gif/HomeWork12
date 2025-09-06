@@ -20,7 +20,6 @@ public class Main {
         String lastName = "Ivanov";
         String fullName = lastName + " " + firstName + " " + middleName;
         System.out.println(fullName);
-
         /*Задача 2
 Для ежемесячного отчета и ведения документации бухгалтерии нужны Ф. И. О. сотрудников,
 полностью написанные заглавными буквами (верхним регистром). Напишите программу, которая изменит написание Ф. И. О. сотрудника
